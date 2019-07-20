@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>用hexo搭建个人博客的一些细节问题 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.环境：Git，Nodejs，hexo   Node.js的下载：直接去官网下载，选择LTS版本，安装   Git的安装：官网下载，安装，搭建博客时会用到，没有安装会报错2.安装hexo博客框架   安装cnpm工具    npm install -g cnpm - -registry=http://registry.npm.taobao.org   利用cnpm安装hexo博客框架    cn">
+  <meta name="description" content="#1.环境：Git，Nodejs，hexo   Node.js的下载：直接去官网下载，选择LTS版本，安装   Git的安装：官网下载，安装，搭建博客时会用到，没有安装会报错 #2.安装hexo博客框架   安装cnpm工具    npm install -g cnpm - -registry=http://registry.npm.taobao.org   利用cnpm安装hexo博客框架">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用hexo搭建个人博客的一些细节问题">
 <meta property="og:url" content="http://yoursite.com/2019/07/20/用hexo搭建个人博客的一些细节问题/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1.环境：Git，Nodejs，hexo   Node.js的下载：直接去官网下载，选择LTS版本，安装   Git的安装：官网下载，安装，搭建博客时会用到，没有安装会报错2.安装hexo博客框架   安装cnpm工具    npm install -g cnpm - -registry=http://registry.npm.taobao.org   利用cnpm安装hexo博客框架    cn">
+<meta property="og:description" content="#1.环境：Git，Nodejs，hexo   Node.js的下载：直接去官网下载，选择LTS版本，安装   Git的安装：官网下载，安装，搭建博客时会用到，没有安装会报错 #2.安装hexo博客框架   安装cnpm工具    npm install -g cnpm - -registry=http://registry.npm.taobao.org   利用cnpm安装hexo博客框架">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-20T05:53:37.701Z">
+<meta property="og:updated_time" content="2019-07-20T09:50:20.338Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用hexo搭建个人博客的一些细节问题">
-<meta name="twitter:description" content="1.环境：Git，Nodejs，hexo   Node.js的下载：直接去官网下载，选择LTS版本，安装   Git的安装：官网下载，安装，搭建博客时会用到，没有安装会报错2.安装hexo博客框架   安装cnpm工具    npm install -g cnpm - -registry=http://registry.npm.taobao.org   利用cnpm安装hexo博客框架    cn">
+<meta name="twitter:description" content="#1.环境：Git，Nodejs，hexo   Node.js的下载：直接去官网下载，选择LTS版本，安装   Git的安装：官网下载，安装，搭建博客时会用到，没有安装会报错 #2.安装hexo博客框架   安装cnpm工具    npm install -g cnpm - -registry=http://registry.npm.taobao.org   利用cnpm安装hexo博客框架">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -166,8 +166,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1.环境：Git，Nodejs，hexo<br>   Node.js的下载：直接去官网下载，选择LTS版本，安装<br>   Git的安装：官网下载，安装，搭建博客时会用到，没有安装会报错<br>2.安装hexo博客框架<br>   安装cnpm工具<br>    npm install -g cnpm - -registry=<a href="http://registry.npm.taobao.org" target="_blank" rel="noopener">http://registry.npm.taobao.org</a><br>   利用cnpm安装hexo博客框架<br>    cnpm install -g hexo-cli<br>3.正式搭建<br>   新建一个blog目录<br>   管理员模式下命令行输入 hexo init，需要点时间<br>   完成后blog目录下将生成一系列文件，可以检查一下<br>4.启动博客<br>   hexo s<br>   localhost：4000本地端口<br>  新建一篇文章 hexo n“” ，hexo g 生成一下</p>
-<p>5.博客部署<br>    部署到github<br>    进入自己的github账号<br>    新建一个repository，repository name 必须是“自己的账户名称”.github.io<br>    描述随便写<br>    还要安装一个插件 cnpm install  - -save hexo-deployer-git<br>    在blog目录下配置 _config.yml，打开子文件，拉到底找到deploy在下面填入<br>     deploy：<br>          type：git<br>          repo：填入刚刚创建的仓库地址<br>          branch：master<br>      配置完成<br>   部署到远端<br>      hexo d<br>    如果有报错的话，有可能没有配置ssh key<br>    1.Github账户注册和新建项目<br>    1)配置ssh kyes ：<br>       1.1)打开 git bash ，输入 ssh-keygen -t rsa -C “邮箱”，连续三个回车，生           成密钥，最后得到了两个文件：id_rsa和id_rsa.pub（默认存储路径是：C:\Users\Administrator.ssh）。<br>      1.2)登录Github，点击头像下的settings，点击 SSH and GPG keys ，点击 New SSH key，将id_rsa.pub文件路径复制进去，标题可填可不填。<br>执行命令<br>   git config-global user.name“用户名”<br>   git config-global user.email“你的邮箱”<br>再次部署hexo d</p>
+        <p>#1.环境：Git，Nodejs，hexo<br>   Node.js的下载：直接去官网下载，选择LTS版本，安装<br>   Git的安装：官网下载，安装，搭建博客时会用到，没有安装会报错</p>
+<p>#2.安装hexo博客框架<br>   安装cnpm工具<br>    npm install -g cnpm - -registry=<a href="http://registry.npm.taobao.org" target="_blank" rel="noopener">http://registry.npm.taobao.org</a><br>   利用cnpm安装hexo博客框架<br>    cnpm install -g hexo-cli</p>
+<p>#3.正式搭建<br>   新建一个blog目录<br>   管理员模式下命令行输入 hexo init，需要点时间<br>   完成后blog目录下将生成一系列文件，可以检查一下</p>
+<p>#4.启动博客<br>   hexo s<br>   localhost：4000本地端口<br>  新建一篇文章 hexo n“” ，hexo g 生成一下</p>
+<p>#5.博客部署<br>    部署到github<br>    进入自己的github账号<br>    新建一个repository，repository name 必须是“自己的账户名称”.github.io<br>    描述随便写<br>    还要安装一个插件 cnpm install  - -save hexo-deployer-git<br>    在blog目录下配置 _config.yml，打开子文件，拉到底找到deploy在下面填入<br>     deploy：<br>          type：git<br>          repo：填入刚刚创建的仓库地址<br>          branch：master<br>      配置完成<br>   部署到远端<br>      hexo d<br>    如果有报错的话，有可能没有配置ssh key<br>    1.Github账户注册和新建项目<br>    1)配置ssh kyes ：<br>       1.1)打开 git bash ，输入 ssh-keygen -t rsa -C “邮箱”，连续三个回车，生           成密钥，最后得到了两个文件：id_rsa和id_rsa.pub（默认存储路径是：C:\Users\Administrator.ssh）。<br>      1.2)登录Github，点击头像下的settings，点击 SSH and GPG keys ，点击 New SSH key，将id_rsa.pub文件路径复制进去，标题可填可不填。<br>执行命令<br>   git config-global user.name“用户名”<br>   git config-global user.email“你的邮箱”<br>再次部署hexo d</p>
 
       
 
