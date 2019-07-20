@@ -164,11 +164,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#1.环境：Git，Nodejs，hexo<br>   Node.js的下载：直接去官网下载，选择LTS版本，安装<br>   Git的安装：官网下载，安装，搭建博客时会用到，没有安装会报错</p>
-<p>#2.安装hexo博客框架<br>   安装cnpm工具<br>    npm install -g cnpm - -registry=<a href="http://registry.npm.taobao.org" target="_blank" rel="noopener">http://registry.npm.taobao.org</a><br>   利用cnpm安装hexo博客框架<br>    cnpm install -g hexo-cli</p>
-<p>#3.正式搭建<br>   新建一个blog目录<br>   管理员模式下命令行输入 hexo init，需要点时间<br>   完成后blog目录下将生成一系列文件，可以检查一下</p>
-<p>#4.启动博客<br>   hexo s<br>   localhost：4000本地端口<br>  新建一篇文章 hexo n“” ，hexo g 生成一下</p>
-<p>#5.博客部署<br>    部署到github<br>    进入自己的github账号<br>    新建一个repository，repository name 必须是“自己的账户名称”.github.io<br>    描述随便写<br>    还要安装一个插件 cnpm install  - -save hexo-deployer-git<br>    在blog目录下配置 _config.yml，打开子文件，拉到底找到deploy在下面填入<br>     deploy：<br>          type：git<br>          repo：填入刚刚创建的仓库地址<br>          branch：master<br>      配置完成<br>   部署到远端<br>      hexo d<br>    如果有报错的话，有可能没有配置ssh key<br>    1.Github账户注册和新建项目<br>    1)配置ssh kyes ：<br>       1.1)打开 git bash ，输入 ssh-keygen -t rsa -C “邮箱”，连续三个回车，生           成密钥，最后得到了两个文件：id_rsa和id_rsa.pub（默认存储路径是：C:\Users\Administrator.ssh）。<br>      1.2)登录Github，点击头像下的settings，点击 SSH and GPG keys ，点击 New SSH key，将id_rsa.pub文件路径复制进去，标题可填可不填。<br>执行命令<br>   git config-global user.name“用户名”<br>   git config-global user.email“你的邮箱”<br>再次部署hexo d</p>
+        <h1 id="1-环境：Git，Nodejs，hexo"><a href="#1-环境：Git，Nodejs，hexo" class="headerlink" title="1.环境：Git，Nodejs，hexo"></a>1.环境：Git，Nodejs，hexo</h1><p>   Node.js的下载：直接去官网下载，选择LTS版本，安装<br>   Git的安装：官网下载，安装，搭建博客时会用到，没有安装会报错</p>
+<h1 id="2-安装hexo博客框架"><a href="#2-安装hexo博客框架" class="headerlink" title="2.安装hexo博客框架"></a>2.安装hexo博客框架</h1><p>   1.安装cnpm工具:<br>       npm install -g cnpm - -registry=<a href="http://registry.npm.taobao.org" target="_blank" rel="noopener">http://registry.npm.taobao.org</a><br>   2.利用cnpm安装hexo博客框架:<br>       cnpm install -g hexo-cli</p>
+<h1 id="3-正式搭建"><a href="#3-正式搭建" class="headerlink" title="3.正式搭建"></a>3.正式搭建</h1><p>   1.新建一个blog目录<br>   2.管理员模式下命令行输入 hexo init，需要点时间<br>   3.完成后blog目录下将生成一系列文件，可以检查一下</p>
+<h1 id="4-启动博客"><a href="#4-启动博客" class="headerlink" title="4.启动博客"></a>4.启动博客</h1><p>   hexo s<br>   localhost：4000本地端口<br>   新建一篇文章 hexo n“” ，hexo g 生成一下</p>
+<h1 id="5-博客部署"><a href="#5-博客部署" class="headerlink" title="5.博客部署"></a>5.博客部署</h1><h2 id="下面演示部署到github"><a href="#下面演示部署到github" class="headerlink" title="下面演示部署到github"></a>下面演示部署到github</h2><p>​       1.进入自己的github账号</p>
+<p>​       2.新建一个repository，repository name 必须是“自己的账户名称”.github.io<br>​       3.描述随便写<br>​       4.还要安装一个插件</p>
+<p>​              cnpm install  - -save hexo-deployer-git</p>
+<p>​       5.在blog目录下配置 _config.yml，打开子文件，拉到底找到deploy在下面填入<br>​            deploy：<br>​                  type：git<br>​                  repo：填入刚刚创建的仓库地址<br>​                  branch：master<br>​                 配置完成<br>​      6.部署到远端：<br>​           hexo d<br>​    如果有报错的话，有可能没有配置ssh key<br>​    1.Github账户注册和新建项目<br>​       1)配置ssh kyes ：<br>​          1.1)打开 git bash ，输入 ssh-keygen -t rsa -C “邮箱”，连续三个回车，生 成密钥，最后得到了两个文件：id_rsa和id_rsa.pub（默认存储路径是：C:\Users\Administrator.ssh）。<br>​         1.2)登录Github，点击头像下的settings，点击 SSH and GPG keys ，点击 New SSH key，将id_rsa.pub文件路径复制进去，标题可填可不填。<br>   2.执行命令<br>​      git config-global user.name“用户名”<br>​      git config-global user.email“你的邮箱”<br>再次部署hexo d</p>
 
       
 
